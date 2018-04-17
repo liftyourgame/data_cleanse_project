@@ -29,7 +29,9 @@ XY_subject_test<-cbind(X_test, Y_test, subject_test)
 XY_subject_combined<-rbind(XY_subject_train, XY_subject_test)
 
 # Extract just the Subject, Activity, Mean & Std Deviation columns
-XY_mean_std <- XY_subject_combined[,c("SubjectId","Activity","tBodyAcc.mean...X","tBodyAcc.mean...Y", "tBodyAcc.mean...Z", "tBodyAcc.std...X", "tBodyAcc.std...Y", "tBodyAcc.std...Z", "tGravityAcc.mean...X", "tGravityAcc.mean...Y", "tGravityAcc.mean...Z", "tGravityAcc.std...X", "tGravityAcc.std...Y", "tGravityAcc.std...Z", "tBodyAccJerk.mean...X", "tBodyAccJerk.mean...Y", "tBodyAccJerk.mean...Z", "tBodyAccJerk.std...X", "tBodyAccJerk.std...Y", "tBodyAccJerk.std...Z", "tBodyGyro.mean...X", "tBodyGyro.mean...Y", "tBodyGyro.mean...Z", "tBodyGyro.std...X", "tBodyGyro.std...Y", "tBodyGyro.std...Z", "tBodyGyroJerk.mean...X", "tBodyGyroJerk.mean...Y", "tBodyGyroJerk.mean...Z", "tBodyGyroJerk.std...X", "tBodyGyroJerk.std...Y", "tBodyGyroJerk.std...Z", "tBodyAccMag.mean..", "tBodyAccMag.std..", "tGravityAccMag.mean..", "tGravityAccMag.std..", "tBodyAccJerkMag.mean..", "tBodyAccJerkMag.std..", "tBodyGyroMag.mean..", "tBodyGyroMag.std..", "tBodyGyroJerkMag.mean..", "tBodyGyroJerkMag.std..")]
+mean_std_cols<-grep("SubjectId|Activity|mean|std", names(XY_subject_combined))
+
+XY_mean_std <- XY_subject_combined[,c(mean_std_cols)]
 
 # Group and compute means
 output<-aggregate(XY_mean_std, by=list(XY_mean_std$SubjectId, XY_mean_std$Activity), FUN=mean)

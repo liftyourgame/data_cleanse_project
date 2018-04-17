@@ -53,3 +53,5 @@ The data is grouped by SubjectId and Activity with all other fields summarised a
 |	tBodyGyroMag.std..	|	The std deviation of the Body Gyro magneto	|
 |	tBodyGyroJerkMag.mean..	|	The mean of the Body Gyro Jerk magneto	|
 |	tBodyGyroJerkMag.std..	|	The std deviation of the Body Gyro Jerk magneto	|
+
+The f values (eg: fBodyBodyGyroJerkMag) are the result of a Fast Fourier Transform.
