@@ -1,7 +1,8 @@
 repo_name: liftyourgame/data_cleanse_project
 report_id: c8c5e7e5afe0ae4fa987e4ff051374f8
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T16:27:34+00:00'
+timestamp: '2024-01-05T08:23:52+00:00'
 requested_by: liftyourgame
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1213/r-logo.png
+  detection_source_url: https://github.com/liftyourgame/data_cleanse_project
   detection_source: Repo Metadata
 - name: pgvector
   description: Open-source vector similarity search for Postgres
@@ -24,6 +26,8 @@ tools:
   category: Data Stores
   sub_category: Database Tools
   image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/liftyourgame/data_cleanse_project/blob/master/data/UCI
+    HAR Dataset/README.txt
   detection_source: data/UCI HAR Dataset/README.txt
   last_updated_by: Greg Pagendam-Turner
   last_updated_on: 2018-04-16 03:27:16.000000000 Z
@@ -35,6 +39,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/liftyourgame/data_cleanse_project
   detection_source: Repo Metadata
 - name: LangChain
   description: Build AI apps with LLMs through composability
@@ -44,6 +49,8 @@ tools:
   category: Communications
   sub_category: Large Language Model Tools
   image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/liftyourgame/data_cleanse_project/blob/master/data/UCI
+    HAR Dataset/README.txt
   detection_source: data/UCI HAR Dataset/README.txt
   last_updated_by: Greg Pagendam-Turner
   last_updated_on: 2018-04-16 03:27:16.000000000 Z
